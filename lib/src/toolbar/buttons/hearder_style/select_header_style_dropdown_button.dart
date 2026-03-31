@@ -4,7 +4,6 @@ import '../../../document/attribute.dart';
 import '../../../l10n/extensions/localizations_ext.dart';
 import '../../base_button/base_value_button.dart';
 import '../../config/buttons/select_header_style_dropdown_button_options.dart';
-
 import '../quill_icon_button.dart';
 
 typedef QuillToolbarSelectHeaderStyleDropdownBaseButton
@@ -114,6 +113,9 @@ class _QuillToolbarSelectHeaderStyleDropdownButtonState
           Attribute.h1,
           Attribute.h2,
           Attribute.h3,
+          Attribute.h4,
+          Attribute.h5,
+          Attribute.h6,
           Attribute.header,
         ];
   }
