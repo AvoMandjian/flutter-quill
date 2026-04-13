@@ -147,22 +147,22 @@ class FlutterQuillLocalizationsEn extends FlutterQuillLocalizations {
   String get normal => 'Normal';
 
   @override
-  String get heading1 => 'Heading 1';
+  String get heading1 => 'H1';
 
   @override
-  String get heading2 => 'Heading 2';
+  String get heading2 => 'H2';
 
   @override
-  String get heading3 => 'Heading 3';
+  String get heading3 => 'H3';
 
   @override
-  String get heading4 => 'Heading 4';
+  String get heading4 => 'H4';
 
   @override
-  String get heading5 => 'Heading 5';
+  String get heading5 => 'H5';
 
   @override
-  String get heading6 => 'Heading 6';
+  String get heading6 => 'H6';
 
   @override
   String get numberedList => 'Numbered list';
@@ -477,22 +477,22 @@ class FlutterQuillLocalizationsEnUs extends FlutterQuillLocalizationsEn {
   String get normal => 'Normal';
 
   @override
-  String get heading1 => 'Heading 1';
+  String get heading1 => 'H1';
 
   @override
-  String get heading2 => 'Heading 2';
+  String get heading2 => 'H2';
 
   @override
-  String get heading3 => 'Heading 3';
+  String get heading3 => 'H3';
 
   @override
-  String get heading4 => 'Heading 4';
+  String get heading4 => 'H4';
 
   @override
-  String get heading5 => 'Heading 5';
+  String get heading5 => 'H5';
 
   @override
-  String get heading6 => 'Heading 6';
+  String get heading6 => 'H6';
 
   @override
   String get numberedList => 'Numbered list';

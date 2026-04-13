@@ -473,37 +473,37 @@ abstract class FlutterQuillLocalizations {
   /// No description provided for @heading1.
   ///
   /// In en, this message translates to:
-  /// **'Heading 1'**
+  /// **'H1'**
   String get heading1;
 
   /// No description provided for @heading2.
   ///
   /// In en, this message translates to:
-  /// **'Heading 2'**
+  /// **'H2'**
   String get heading2;
 
   /// No description provided for @heading3.
   ///
   /// In en, this message translates to:
-  /// **'Heading 3'**
+  /// **'H3'**
   String get heading3;
 
   /// No description provided for @heading4.
   ///
   /// In en, this message translates to:
-  /// **'Heading 4'**
+  /// **'H4'**
   String get heading4;
 
   /// No description provided for @heading5.
   ///
   /// In en, this message translates to:
-  /// **'Heading 5'**
+  /// **'H5'**
   String get heading5;
 
   /// No description provided for @heading6.
   ///
   /// In en, this message translates to:
-  /// **'Heading 6'**
+  /// **'H6'**
   String get heading6;
 
   /// No description provided for @numberedList.
