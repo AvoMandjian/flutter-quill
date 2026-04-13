@@ -79,12 +79,26 @@ class QuillSimpleToolbar extends StatelessWidget
               controller: controller,
               baseOptions: config.buttonOptions.base,
             ),
-          if (config.showFontSize)
-            QuillToolbarFontSizeButton(
-              options: config.buttonOptions.fontSize,
-              controller: controller,
-              baseOptions: config.buttonOptions.base,
-            ),
+          if (config.showHeaderStyle) ...[
+            if (config.headerStyleType.isOriginal)
+              QuillToolbarSelectHeaderStyleDropdownButton(
+                controller: controller,
+                options: config.buttonOptions.selectHeaderStyleDropdownButton,
+                baseOptions: config.buttonOptions.base,
+              )
+            else
+              QuillToolbarSelectHeaderStyleButtons(
+                controller: controller,
+                options: config.buttonOptions.selectHeaderStyleButtons,
+                baseOptions: config.buttonOptions.base,
+              ),
+          ],
+          // if (config.showFontSize)
+          //   QuillToolbarFontSizeButton(
+          //     options: config.buttonOptions.fontSize,
+          //     controller: controller,
+          //     baseOptions: config.buttonOptions.base,
+          //   ),
           if (config.showBoldButton)
             QuillToolbarToggleStyleButton(
               attribute: Attribute.bold,
@@ -201,20 +215,6 @@ class QuillSimpleToolbar extends StatelessWidget
               options: config.buttonOptions.selectLineHeightStyleDropdownButton,
               baseOptions: config.buttonOptions.base,
             ),
-          if (config.showHeaderStyle) ...[
-            if (config.headerStyleType.isOriginal)
-              QuillToolbarSelectHeaderStyleDropdownButton(
-                controller: controller,
-                options: config.buttonOptions.selectHeaderStyleDropdownButton,
-                baseOptions: config.buttonOptions.base,
-              )
-            else
-              QuillToolbarSelectHeaderStyleButtons(
-                controller: controller,
-                options: config.buttonOptions.selectHeaderStyleButtons,
-                baseOptions: config.buttonOptions.base,
-              ),
-          ],
         ],
         [
           if (config.showListNumbers)

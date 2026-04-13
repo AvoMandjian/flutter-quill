@@ -34,6 +34,12 @@ bool handleFormatBlockStyleBySpaceEvent({
       headerAttribute = Attribute.h2;
     } else if (count == 3) {
       headerAttribute = Attribute.h3;
+    } else if (count == 4) {
+      headerAttribute = Attribute.h4;
+    } else if (count == 5) {
+      headerAttribute = Attribute.h5;
+    } else if (count == 6) {
+      headerAttribute = Attribute.h6;
     }
     _updateSelectionForKeyPhrase(character, headerAttribute, controller);
     return true;

@@ -25,6 +25,43 @@ Map<SingleActivator, Intent> defaultSinlgeActivatorIntents() {
       meta: _isDesktopMacOS,
     ): const RedoTextIntent(SelectionChangedCause.keyboard),
 
+    // Headers
+    SingleActivator(
+      LogicalKeyboardKey.digit1,
+      control: !_isDesktopMacOS,
+      meta: _isDesktopMacOS,
+    ): const QuillEditorApplyHeaderIntent(Attribute.h1),
+    SingleActivator(
+      LogicalKeyboardKey.digit2,
+      control: !_isDesktopMacOS,
+      meta: _isDesktopMacOS,
+    ): const QuillEditorApplyHeaderIntent(Attribute.h2),
+    SingleActivator(
+      LogicalKeyboardKey.digit3,
+      control: !_isDesktopMacOS,
+      meta: _isDesktopMacOS,
+    ): const QuillEditorApplyHeaderIntent(Attribute.h3),
+    SingleActivator(
+      LogicalKeyboardKey.digit4,
+      control: !_isDesktopMacOS,
+      meta: _isDesktopMacOS,
+    ): const QuillEditorApplyHeaderIntent(Attribute.h4),
+    SingleActivator(
+      LogicalKeyboardKey.digit5,
+      control: !_isDesktopMacOS,
+      meta: _isDesktopMacOS,
+    ): const QuillEditorApplyHeaderIntent(Attribute.h5),
+    SingleActivator(
+      LogicalKeyboardKey.digit6,
+      control: !_isDesktopMacOS,
+      meta: _isDesktopMacOS,
+    ): const QuillEditorApplyHeaderIntent(Attribute.h6),
+    SingleActivator(
+      LogicalKeyboardKey.digit0,
+      control: !_isDesktopMacOS,
+      meta: _isDesktopMacOS,
+    ): const QuillEditorApplyHeaderIntent(Attribute.header),
+
     // Selection formatting.
     SingleActivator(
       LogicalKeyboardKey.keyB,
@@ -102,43 +139,6 @@ Map<SingleActivator, Intent> defaultSinlgeActivatorIntents() {
       meta: _isDesktopMacOS,
       shift: true,
     ): const IndentSelectionIntent(false),
-
-    // Headers
-    SingleActivator(
-      LogicalKeyboardKey.digit1,
-      control: !_isDesktopMacOS,
-      meta: _isDesktopMacOS,
-    ): const QuillEditorApplyHeaderIntent(Attribute.h1),
-    SingleActivator(
-      LogicalKeyboardKey.digit2,
-      control: !_isDesktopMacOS,
-      meta: _isDesktopMacOS,
-    ): const QuillEditorApplyHeaderIntent(Attribute.h2),
-    SingleActivator(
-      LogicalKeyboardKey.digit3,
-      control: !_isDesktopMacOS,
-      meta: _isDesktopMacOS,
-    ): const QuillEditorApplyHeaderIntent(Attribute.h3),
-    SingleActivator(
-      LogicalKeyboardKey.digit4,
-      control: !_isDesktopMacOS,
-      meta: _isDesktopMacOS,
-    ): const QuillEditorApplyHeaderIntent(Attribute.h4),
-    SingleActivator(
-      LogicalKeyboardKey.digit5,
-      control: !_isDesktopMacOS,
-      meta: _isDesktopMacOS,
-    ): const QuillEditorApplyHeaderIntent(Attribute.h5),
-    SingleActivator(
-      LogicalKeyboardKey.digit6,
-      control: !_isDesktopMacOS,
-      meta: _isDesktopMacOS,
-    ): const QuillEditorApplyHeaderIntent(Attribute.h6),
-    SingleActivator(
-      LogicalKeyboardKey.digit0,
-      control: !_isDesktopMacOS,
-      meta: _isDesktopMacOS,
-    ): const QuillEditorApplyHeaderIntent(Attribute.header),
 
     SingleActivator(
       LogicalKeyboardKey.keyG,
